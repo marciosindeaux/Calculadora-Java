@@ -15,7 +15,7 @@ public class Calc extends JFrame{
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.getContentPane().setLayout(null);
 		TextPanel txtPanel = new TextPanel();
-		DigitsPanel dgtsPanel = new DigitsPanel(txtPanel.getTxt());
+		DigitsPanel dgtsPanel = new DigitsPanel(txtPanel.getTxt(),txtPanel.getEquation());
 		this.add(txtPanel);
 		this.add(dgtsPanel);
 		this.setVisible(true);
